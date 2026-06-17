@@ -1,5 +1,5 @@
-export default async function getData() {
-  const url = "https://pokeapi.co/api/v2/pokemon/ditto";
+export default async function getData(name) {
+  const url = `https://pokeapi.co/api/v2/pokemon/${name}`;
 
   try {
     const repsonse = await fetch(url); // wait till fetch resolves and returns a response object
