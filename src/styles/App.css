@@ -1,2 +1,6 @@
 @media (width < 500px) {
+  header,
+  section {
+    text-align: center;
+  }
 }
