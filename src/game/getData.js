@@ -7,7 +7,7 @@ export default async function getData(name) {
       throw new Error(`Response Status : ${repsonse.status}`);
     }
 
-    const result = await repsonse.json(); // wait till stuff(body
+    const result = await repsonse.json();
 
     const name = await result.forms[0].name;
     const sprite = await result.sprites.front_default;
