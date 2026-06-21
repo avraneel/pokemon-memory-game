@@ -6,8 +6,6 @@ export default function Card({ item, setScore, setBestScore }) {
   const nameToDisplay = `${item.name[0].toUpperCase() + item.name.substring(1)}`;
 
   function handleClick() {
-    console.log(`You clicked on ${item.name}`);
-    // setScore(0);
     playRound(item.name, setScore, setBestScore);
     // update score and best score here
   }

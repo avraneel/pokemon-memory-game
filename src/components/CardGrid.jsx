@@ -41,7 +41,6 @@ export default function CardGrid({ setScore, setBestScore }) {
         let item = await getData(pokemonNames[i]);
         fetchedItems.push(item);
       }
-      console.log(fetchedItems);
       if (!ignore) {
         setPokemomItems(fetchedItems);
       }
